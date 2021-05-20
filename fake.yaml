@@ -1,0 +1,15 @@
+Pet:
+  type: object
+  properties:
+    id:
+      type: integer
+      format: int64
+    name:
+      type: string
+      x-faker: name.firstName
+      example: doggie
+    photoUrls:
+      type: array
+      items:
+        type: string
+        x-faker: image.imageUrl
